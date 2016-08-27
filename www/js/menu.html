@@ -1,0 +1,17 @@
+<div class="list card" ng-repeat="task in tasks track by $index">
+
+    <div class="item item-divider" style="background-color : #778899" ng-click="toggle(task)">
+        <span ng-bind="task.category"></span>
+    </div>
+
+    <div ng-show="task.visible" ng-repeat="type in task.types">
+        <div class="item item-divider">
+            <span ng-bind="type.title"></span>
+            <span ng-bind="type.price" style="float:right"></span>
+        </div>
+        <div class="item item-body" ng-show="type.content">
+            <span ng-bind="type.content"></span>
+         </div>
+    </div>
+
+</div>

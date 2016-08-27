@@ -1,0 +1,7 @@
+<div class="list card" ng-repeat="link in links track by $index">
+
+    <div class="item item-divider" style="background-color : #778899; text-align: center" ng-click="toggle(task)">
+        <a href="#/{{link.path}}" style = "text-decoration: none ; color : inherit"><span ng-bind="link.name"></span></a>
+    </div>
+
+</div>
